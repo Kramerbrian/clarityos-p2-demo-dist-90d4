@@ -8,7 +8,7 @@ curl -fsSL "$BASE/favicon.ico.b64" | base64 -d > dist/favicon.ico
 curl -fsSL "$BASE/assets/index-Ct9E8qs7.css.gz.b64" | base64 -d | gzip -dc > dist/assets/index-Ct9E8qs7.css
 curl -fsSL "$BASE/landing/index.html.gz.b64" | base64 -d | gzip -dc > dist/landing/index.html
 : > /tmp/js.b64
-for i in 00 01 02 03 04 05 06 07 08 09 10 11 12; do
+for i in 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30; do
   curl -fsSL "$BASE/js/p${i}.txt" >> /tmp/js.b64
 done
 base64 -d /tmp/js.b64 | gzip -dc > dist/assets/index-YbLYW-zc.js
